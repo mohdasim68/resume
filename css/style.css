@@ -1,0 +1,261 @@
+html{
+  scroll-behavior: smooth;
+}
+html,
+body,
+header{
+	height: 100%;
+}
+.ripple{
+	height: 100%;
+	background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("a2.jpg")no-repeat center center fixed;
+	-webkit-background-size:cover;	
+}
+.navbar .navbar-nav li a{
+	color: white !important;
+}
+
+ .navbar .navbar-nav li a:hover{
+	color: green !important;
+	transition:1s !important;
+} 
+.navbar .navbar-brand{color: green !important;}
+/* home page text alignment */
+#home .container{
+margin-top: 20%;
+font-size: 200%;
+}
+.top-nav-collapse{
+	background: whitesmoke;
+
+}
+
+.top-nav-collapse .navbar-nav li a{
+	color: black !important;
+
+}
+/* color_switcher */
+body{position: relative;}
+.panel_box{
+position: fixed;
+height: 100px;
+width: 100px;
+top: 20%;
+left: -100px;
+display: block;
+text-align: center;
+background:whitesmoke;
+z-index: 9999;
+}
+.panel_box ul{
+margin-top: -14px;
+margin-left: 5px;
+padding:10px 10px 10px 10px;
+text-align:center; 
+}
+.panel_box ul li{
+margin-left: 5px;
+margin-bottom: 5px;
+height: 20px;
+width: 20px;
+display: block;
+float: left;
+border-radius: 50%;
+background: white;
+}
+/* spinner button */
+.spinner_button{
+position: relative;
+background:whitesmoke;
+width: 30px;
+border-bottom-right-radius: 20%;
+border-top-right-radius: 20%;
+margin-top: -20px;
+margin-left: 85px;
+z-index: 999;
+padding: 5px;
+}
+/* end color switcher */
+
+.desc{
+color: green;
+}
+#about,#skills{
+
+background: white;
+}
+.panel_box .color_panel .red_color{
+background: red;
+}
+.panel_box .color_panel .green_color{
+background: green;
+}
+.panel_box .color_panel .blue_color{
+background: blue;
+}
+.panel_box .color_panel .yellow_color{
+background: yellow;
+}.panel_box .color_panel .orange_color{
+background: orange;
+}
+.panel_box .color_panel .skyblue_color{
+background: skyblue;
+}
+/*  RED COLOR*/
+body .red_color_bar{color: red;}
+.red_color_bar .navbar .navbar-nav li a:hover{color: red !important;}
+.red_color_bar .navbar .navbar-brand{color: red !important;}
+.red_color_bar .desc{color: red !important;}
+.red_color_bar #about h2{color: red;}
+.red_color_bar .text-justify span{color: red;}
+.red_color_bar #skills h2{color: red !important;}
+.red_color_bar #skills .progress-bar{background-color: red !important;}
+/*  GREEN COLOR*/
+body .green_color_bar{color: green;}
+.green_color_bar .navbar .navbar-nav li a:hover{color: green !important;}
+.green_color_bar .navbar .navbar-brand{color: green !important;}
+.green_color_bar .desc{color: green !important;}
+/*  BLUE COLOR*/
+body .blue_color_bar{color: blue;}
+.blue_color_bar .navbar .navbar-nav li a:hover{color: blue !important;}
+.blue_color_bar .navbar .navbar-brand{color: blue !important;}
+.blue_color_bar .desc{color: blue !important;}
+.blue_color_bar #about h2{color: blue;}
+.blue_color_bar .text-justify span{color: blue;}
+.blue_color_bar #skills h2{color: blue !important;}
+.blue_color_bar #skills .progress-bar{background-color: blue !important;}
+/*  YELLOW COLOR*/
+body .yellow_color_bar{color: yellow;}
+.yellow_color_bar .navbar .navbar-nav li a:hover{color: yellow !important;}
+.yellow_color_bar .navbar .navbar-brand{color: yellow !important;}
+.yellow_color_bar .desc{color: yellow !important;}
+.yellow_color_bar #about h2{color: yellow;}
+.yellow_color_bar .text-justify span{color: yellow;}
+.yellow_color_bar #skills h2{color: yellow !important;}
+.yellow_color_bar #skills .progress-bar{background-color: yellow !important;}
+/*  ORANGE COLOR*/
+body .orange_color_bar{color: orange;}
+.orange_color_bar .navbar .navbar-nav li a:hover{color: orange !important;}
+.orange_color_bar .navbar .navbar-brand{color: orange !important;}
+.orange_color_bar .desc{color: orange !important;}
+.orange_color_bar #about h2{color: orange;}
+.orange_color_bar .text-justify span{color: orange;}
+.orange_color_bar #skills h2{color: orange !important;}
+.orange_color_bar #skills .progress-bar{background-color: orange !important;}
+/*  SKYBLUE COLOR*/
+body .skyblue_color_bar{color: skyblue;}
+.skyblue_color_bar .navbar .navbar-nav li a:hover{color: skyblue !important;}
+.skyblue_color_bar .navbar .navbar-brand{color: skyblue !important;}
+.skyblue_color_bar .desc{color: skyblue !important;}
+.skyblue_color_bar #about h2{color: skyblue;}
+.skyblue_color_bar .text-justify span{color: skyblue;}
+.skyblue_color_bar #skills h2{color: skyblue !important;}
+.skyblue_color_bar #skills .progress-bar{background-color: skyblue !important;}
+/*----start_animations-----*/
+	/*resume button*/
+@keyframes buttonAnimation{
+    0%{
+        transform: rotate(5deg);
+        }
+    50%{
+        transform: rotate(-5deg);
+        }
+    100%{
+        transform: rotate(0deg);
+        }
+}	
+.container .btn{
+    animation: buttonAnimation 0.5s infinite 0s linear;
+}
+/*home text*/
+@keyframes textAnimation{
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+        }
+    99%{
+        transform: rotate(xx) translateY(0px);
+        opacity: 1;
+        }
+}
+
+.container .cont{
+    animation: textAnimation 3s infinite 0s linear;
+}
+/*imyimage animation*/
+@keyframes myimage{
+    0%{
+        transform: skewX(15deg);
+        opacity: 1;
+        }
+    53%{
+        transform: skewX(-15deg);
+        opacity: 1;
+        }
+    99%{
+        transform: rotate(xx) skewX(15deg);
+        opacity: 1;
+        }
+}
+
+#about .my_img img{
+    animation: myimage 3s infinite 0s ease;
+}
+/* end myimage animation*/
+
+/* start progress bar animation*/
+@keyframes yourAnimation{
+    0%{
+         transform: translateX(-100%);
+        }
+    99%{
+ 			transform: translateX(0%);
+        }
+}
+
+#skills .container .progress-bar{
+    animation: yourAnimation 2s 1 1s ease;
+}
+/* stop progress bar animation*/
+
+
+
+
+
+@keyframes backg{
+    0%{
+        color: black;
+        }
+    99%{
+        }
+}
+
+.red_color_bar #about h2{
+    animation: backg 2s forwards 0s linear;
+}
+
+
+
+
+
+
+/*-------------------------------------ABOUT-----------------------------------------*/
+	/* CONTAINER*/
+	
+#about h2{
+margin-top: 40px;
+color: green;
+}
+#skills{
+margin-top: 20px;
+color: green;
+}
+.text-justify span{
+color: green;
+}
+#about .my_img img{
+height: 400px !important;
+width: 400px !important;
+}
+#skills .progress-bar{background-color: green !important;}
+#skills .row label{color: black;}
